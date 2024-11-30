@@ -1,0 +1,8 @@
+frontend should support:
+* Gridstack
+* Material UI + RTL 
+* WYSIWYG Editor with markdown-like plugins
+* Vite
+* Nginx configuration
+* Backend api endpoints implemnetation
+* Etc
