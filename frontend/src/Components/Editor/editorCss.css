@@ -1,0 +1,13 @@
+.react-resizable-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important; /* Remove default background */
+    width: 24px; /* Adjust size */
+    height: 24px; /* Adjust size */
+    cursor: nwse-resize; /* Custom resize cursor */
+  }
+  .react-resizable-handle::after {
+    content: '';
+    display: none; /* Hide the default corner graphic */
+  }

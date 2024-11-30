@@ -83,7 +83,6 @@ const Sidebar: React.FC = () => {
             <ToggleButton
               value="dark"
               sx={{
-                color: mode === "dark" ? "#F5F5F5" : "#333333",
                 transition: "background-color 0.3s ease, color 0.3s ease", // Smooth text and background animation
                 "&:hover": {
                   backgroundColor: mode === "dark" ? "#444444" : "#CCCCCC",
@@ -95,7 +94,6 @@ const Sidebar: React.FC = () => {
             <ToggleButton
               value="light"
               sx={{
-                color: mode === "light" ? "#F5F5F5" : "#333333",
                 transition: "background-color 0.3s ease, color 0.3s ease", // Smooth text and background animation
                 "&:hover": {
                   backgroundColor: mode === "light" ? "#444444" : "#CCCCCC",

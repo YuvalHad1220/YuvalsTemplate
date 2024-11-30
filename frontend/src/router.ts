@@ -8,11 +8,12 @@ import Dashboard from "./Views/Dashboard/Dashboard";
 import Videos from "./Views/Videos/Videos";
 import Accidents from "./Views/Accidents/Accidents";
 import TechincalLiterature from "./Views/TechnicalLiterature/TechincalLiterature";
-import DataGrid, { reportsLoader } from "./Views/Reports/Reports";
+import DataGrid from "./Views/Reports/Reports";
 import { dashboardLoader } from "./Views/Dashboard/loaders";
 import { accidentsLoader } from "./Views/Accidents/loaders";
 import { videoLoader } from "./Views/Videos/loaders";
 import { techincalLiteratureLoader } from "./Views/TechnicalLiterature/loaders";
+import { reportsLoader } from "./Views/Reports/loaders";
 
 // Create the root route
 const rootRoute = createRootRoute({

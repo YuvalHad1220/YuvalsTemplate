@@ -7,69 +7,8 @@ import useYuvalTable, {
 import { useLoaderData } from "@tanstack/react-router";
 import CustomTable from "../../Components/Table/CustomTable";
 import TableFilter from "../../Components/Table/TableFilter";
+import { Inspection } from "./loaders";
 
-// Loader function
-export const reportsLoader = async () => {
-  const data: Inspection[] = [
-    {
-      investigationNumber: 1001,
-      examinerName: "אחמד חסן",
-      firstName: "אחמד",
-      lastName: "חסן",
-      phoneNumber: "050-1234567",
-      faxNumber: "03-9876543",
-      unit: "יחידת בקרה",
-      idNumber: "צ-123456",
-      status: "פעיל",
-      inspectionDate: new Date("2024-01-15"),
-      nextInspectionDate: new Date("2024-07-15"),
-    },
-    {
-      investigationNumber: 1002,
-      examinerName: "שרה לוי",
-      firstName: "שרה",
-      lastName: "לוי",
-      phoneNumber: "052-7654321",
-      faxNumber: "02-5432167",
-      unit: "יחידת איכות",
-      idNumber: "צ-654321",
-      status: "מושעה",
-      inspectionDate: new Date("2024-02-20"),
-      nextInspectionDate: new Date("2024-08-20"),
-    },
-    {
-      investigationNumber: 1003,
-      examinerName: "מוחמד אבו",
-      firstName: "מוחמד",
-      lastName: "אבו",
-      phoneNumber: "054-9876543",
-      faxNumber: "04-1234567",
-      unit: "יחידת פיקוח",
-      idNumber: "צ-789012",
-      status: "פעיל",
-      inspectionDate: new Date("2024-03-10"),
-      nextInspectionDate: new Date("2024-09-10"),
-    },
-    // Add more records as needed...
-  ];
-
-  return data;
-};
-
-// Data Type
-type Inspection = {
-  investigationNumber: number;
-  examinerName: string;
-  firstName: string;
-  lastName: string;
-  phoneNumber: string;
-  faxNumber: string;
-  unit: string;
-  idNumber: string;
-  status: string;
-  inspectionDate: Date;
-  nextInspectionDate: Date;
-};
 
 // Component
 const DataGrid: React.FC = () => {
